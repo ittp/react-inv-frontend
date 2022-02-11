@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
+
 import {
   Typography,
   Table,
@@ -28,19 +29,7 @@ const {} = List;
 // const { Header } = ;
 
 const { Paragraph } = Typography;
-const edd = (a) => (
-  <Paragraph
-    editable={{
-      tooltip: false,
-      text: '111',
-      onChange: (title) => {
-        console.log(title);
-      },
-    }}
-  >
-    {a}
-  </Paragraph>
-);
+
 const { TabPane } = Tabs;
 const initialPanes = [
   { title: 'Tab 1', content: 'Content of Tab 1', key: '1' },
